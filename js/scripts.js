@@ -138,6 +138,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     atras2.addEventListener('click', function(){
         location.reload(true);
+        card1.style.display = 'flex';
+        card3.style.display = 'flex';        
+        card2.style.flexBasis = '30%';
+        card2.style.display = 'flex';
+        card2.style.cursor = 'pointer';
+        // card2.style.height = 'auto';
+        main.style.minHeight = '25rem';
+        card2.classList.add("hover");
+        card2.style.gridTemplateColumns = 'repeat(4, 1fr)';
+        textoCard2.style.display = 'flex';
+        textoCard2.style.gridColumn = '2/-1';
+        textoCard2.style.gridRow = '1/3';
+        textoCard2.style.marginRight = '2rem';
+        tituloCard2.style.gridColumn = '1/2';
+        imgCard2.style.gridColumn = '1/2';
+        imgCard2.style.gridRow = '2/3';
+        imgCard2.style.justifySelf = 'center';
+        imgCard2.style.marginBottom = '4rem';
     });
     atras3.addEventListener('click', function(){
         location.reload(true);
